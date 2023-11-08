@@ -3,3 +3,11 @@
     margin: 0;
     padding: 0;
 }
+body{
+    height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #52a4ec,
+        #61ffb8
+    );
+}
