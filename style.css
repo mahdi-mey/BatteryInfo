@@ -4,16 +4,27 @@
     padding: 0;
 }
 body{
-    height: 100vh;
     background: linear-gradient(
         135deg,
         #0b132b,
         #1F1717
     );
     font-family: "TechFont", sans-serif;
+
+    /* aligning center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 @font-face {
     font-family: "TechFont";
     src: url("font/Technology.ttf");
+}
+.container{
+    width: 500px;
+    height: 300px;
+    background-color: #000;
+    border-radius: 0.5rem;
 }
