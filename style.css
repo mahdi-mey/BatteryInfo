@@ -10,4 +10,10 @@ body{
         #52a4ec,
         #61ffb8
     );
+    font-family: "TechFont", sans-serif;
+}
+
+@font-face {
+    font-family: "TechFont";
+    src: url("font/Technology.ttf");
 }
