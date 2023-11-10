@@ -67,13 +67,19 @@ body{
 .battery-percentage{
     display: flex;
 }
-.battery-percentage{
-    font-family: 'TechFont', sans-serif;
+.battery-percentage .percentage{
+    font-size: 0.8em;
+    align-self: center;
 }
-.real-box1,
+.battery-percentage .fade,
+.battery-percentage .real{
+    font-family: 'TechFont', sans-serif;
+    color: var(--real-color);
+}
+/* .real-box1,
 .real-box2,
 .real-box3,
 .real-box4,
 .real-box5{
     background-color: var(--real-color);
-}
+} */
