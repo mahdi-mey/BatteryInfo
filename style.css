@@ -15,6 +15,7 @@ body{
     );
     font-family: sans-serif;
     /* font-family: "TechFont", sans-serif; */
+    font-size: 1.2em;
 
     /* aligning center */
     display: flex;
@@ -66,10 +67,7 @@ body{
 .battery-percentage{
     display: flex;
 }
-.battery-percentage .fade{
-font-family: 'TechFont', sans-serif;
-}
-.battery-percentage .real{
+.battery-percentage{
     font-family: 'TechFont', sans-serif;
 }
 .real-box1,
