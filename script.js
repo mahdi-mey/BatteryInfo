@@ -9,6 +9,7 @@ window.addEventListener('load', () => {
     navigator.getBattery().then(batteryInfo => {
         console.log(batteryInfo)
 
+        // battery icon color
         if(batteryInfo.charging){
             chargerIcon.style.color = mainColor
         }
@@ -16,9 +17,11 @@ window.addEventListener('load', () => {
             chargerIcon.style.color = secondaryColor
         }
 
+        // battery persentage handler
         const batteryLevel =  Math.round(batteryInfo.level * 100)
         batteryText.innerHTML = `${batteryLevel}%`
 
+        // changes battery boxes
         const batteryammount = Math.round(batteryInfo.level * 10)
         for(let i = 0; i < batteryammount; i++){
             batteryBoxes[i].style.backgroundColor = mainColor
