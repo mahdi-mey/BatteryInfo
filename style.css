@@ -66,6 +66,8 @@ body{
 }
 .battery-percentage{
     display: flex;
+    align-items: center;
+    gap: 3px;
 }
 .battery-percentage .percentage{
     font-size: 0.8em;
@@ -75,4 +77,8 @@ body{
 .battery-percentage .real{
     font-family: 'TechFont', sans-serif;
     color: var(--real-color);
+}
+.chargerIcon{
+    color: var(--fade-color);
+    font-size: 20px;
 }
