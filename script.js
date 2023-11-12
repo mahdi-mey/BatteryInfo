@@ -31,7 +31,7 @@ function batteryIcon(batteryInfo){
 function batteryPercentage(batteryInfo){
     // battery persentage handler
     const batteryLevel =  Math.round(batteryInfo.level * 100)
-    batteryText.innerHTML = `${batteryLevel}%`
+    batteryText.innerHTML = `${batteryLevel}`
 }
 function batteryBoxesHandler(batteryInfo){
     // changes battery boxes
