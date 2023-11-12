@@ -1,5 +1,5 @@
 :root{
-    --fade-color: #e1e1e2;
+    --fade-color: #c8c8c9c4;
     --real-color: #2a19c6;
 }
 *{
@@ -82,9 +82,15 @@ body{
 .battery-percentage .fade,
 .battery-percentage .real{
     font-family: 'TechFont', sans-serif;
+}
+.battery-percentage .real{
     color: var(--real-color);
 }
 .chargerIcon{
     color: var(--fade-color);
     font-size: 20px;
+}
+/* ------> Media queries <------ */
+@media screen and (max-width: 400px) {
+    /*Smartphones*/
 }
