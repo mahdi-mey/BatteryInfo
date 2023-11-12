@@ -14,7 +14,7 @@ function batteryInformation(){
         batteryPlugChage(batteryInfo)
         setInterval(() => {
             batteryPercentage(batteryInfo)
-            console.log('check battery info set interval')
+            batteryBoxesHandler(batteryInfo)
         }, 5000);
     })
 }
@@ -53,7 +53,3 @@ function batteryPlugChage(batteryInfo){
 }
 
 window.addEventListener('load', batteryInformation)
-
-// setInterval(() => {
-//     console.log('5000ms');
-// }, 5000);
