@@ -2,4 +2,4 @@
 
 ---
 
-[Deom](https://mahdi-mey.github.io/BatteryInfo/)
+[View Demo](https://mahdi-mey.github.io/BatteryInfo/)
