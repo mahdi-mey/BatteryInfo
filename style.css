@@ -1,6 +1,6 @@
 :root{
-    --fade-color: #949494;
-    --real-color: #15bff3;
+    --fade-color: #e2e1e1;
+    --real-color: #15a2f3;
 }
 *{
     box-sizing: border-box;
@@ -10,8 +10,8 @@
 body{
     background: linear-gradient(
         135deg,
-        #0b132b,
-        #1F1717
+        #e8b3ff,
+        #87cef8
     );
     font-family: sans-serif;
     /* font-family: "TechFont", sans-serif; */
@@ -31,9 +31,16 @@ body{
 .container{
     width: 500px;
     height: 300px;
-    background-color: #000;
+    background-color: #131313;
     border-radius: 0.5rem;
 
+    /* glass effect */
+    background: rgba(0, 0, 0, 0.501);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(0, 0, 0, 0.21);
 }
 .container .battery{
     color: var(--fade-color);
