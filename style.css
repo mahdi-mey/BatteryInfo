@@ -1,6 +1,6 @@
 :root{
-    --fade-color: #e2e1e1;
-    --real-color: #15a2f3;
+    --fade-color: #e1e1e2;
+    --real-color: #2a19c6;
 }
 *{
     box-sizing: border-box;
@@ -30,9 +30,8 @@ body{
 }
 .container{
     width: 500px;
-    height: 300px;
+    padding: 1rem 0;
     background-color: #131313;
-    border-radius: 0.5rem;
 
     /* glass effect */
     background: rgba(0, 0, 0, 0.501);
