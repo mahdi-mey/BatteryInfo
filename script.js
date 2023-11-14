@@ -8,7 +8,6 @@ const secondaryColor = window.getComputedStyle(document.documentElement).getProp
 function batteryInformation(){
     if(navigator.getBattery){
         navigator.getBattery().then(batteryInfo => {
-            console.log(batteryInfo)
             batteryIcon(batteryInfo)
             batteryPercentage(batteryInfo)
             batteryBoxesHandler(batteryInfo)
@@ -48,10 +47,8 @@ function batteryBoxesHandler(batteryInfo){
 function batteryPlugChage(batteryInfo){
     batteryInfo.addEventListener('chargingchange', function(event) {
         if (batteryInfo.charging) {
-          console.log("Charger plugged in");
           batteryIcon(batteryInfo)
         } else {
-          console.log("Charger unplugged");
           batteryIcon(batteryInfo)
         }
       });
