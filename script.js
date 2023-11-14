@@ -45,6 +45,9 @@ function batteryBoxesHandler(batteryInfo){
     }
 }
 function batteryPlugChage(batteryInfo){
+    if(batteryInfo.charging){
+        chargerIcon.classList.add('charging')
+    }
     batteryInfo.addEventListener('chargingchange', function() {
         if (batteryInfo.charging) {
           batteryIcon(batteryInfo)
