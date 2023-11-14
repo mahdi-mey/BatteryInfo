@@ -1,6 +1,6 @@
 :root{
     --fade-color: #c8c8c9c4;
-    --real-color: #2a19c6;
+    --real-color: #5184ff;
 }
 *{
     box-sizing: border-box;
@@ -8,11 +8,7 @@
     padding: 0;
 }
 body{
-    background: linear-gradient(
-        135deg,
-        #e8b3ff,
-        #87cef8
-    );
+    background-color: #111;
     font-family: sans-serif;
     /* font-family: "TechFont", sans-serif; */
     font-size: 1.2em;
@@ -34,7 +30,7 @@ body{
     background-color: #131313;
 
     /* glass effect */
-    background: rgba(0, 0, 0, 0.501);
+    background: rgba(62, 62, 62, 0.501);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(20px);
