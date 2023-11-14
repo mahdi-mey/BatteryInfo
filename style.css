@@ -85,4 +85,24 @@ body{
 .chargerIcon{
     color: var(--fade-color);
     font-size: 20px;
+
+    /* color: #FFFFFF; */
+    /* background: #232323; */
+    /* text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18; */
+    /* color: #FFFFFF; */
+    /* background: #232323; */
+}
+.charging{
+    animation: chargingAnimation 1s ease alternate infinite;
+}
+@keyframes chargingAnimation {
+    to{
+        /* text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #18aaff, 0 0 30px #18aaff, 0 0 40px #18aaff, 0 0 55px #18aaff, 0 0 75px #18aaff; */
+        text-shadow: 0 0 20px #18aaff;
+    }
+    /* to{
+        box-shadow: 0px 0px 18px 2px rgba(25,81,227,0.75);
+        -webkit-box-shadow: 0px 0px 18px 2px rgba(25,81,227,0.75);
+        -moz-box-shadow: 0px 0px 18px 2px rgba(25,81,227,0.75);
+    } */
 }
