@@ -6,17 +6,22 @@ const mainColor = window.getComputedStyle(document.documentElement).getPropertyV
 const secondaryColor = window.getComputedStyle(document.documentElement).getPropertyValue('--fade-color')
 
 function batteryInformation(){
-    navigator.getBattery().then(batteryInfo => {
-        console.log(batteryInfo)
-        batteryIcon(batteryInfo)
-        batteryPercentage(batteryInfo)
-        batteryBoxesHandler(batteryInfo)
-        batteryPlugChage(batteryInfo)
-        setInterval(() => {
+    if(navigator.getBattery){
+        navigator.getBattery().then(batteryInfo => {
+            console.log(batteryInfo)
+            batteryIcon(batteryInfo)
             batteryPercentage(batteryInfo)
             batteryBoxesHandler(batteryInfo)
-        }, 5000);
-    })
+            batteryPlugChage(batteryInfo)
+            setInterval(() => {
+                batteryPercentage(batteryInfo)
+                batteryBoxesHandler(batteryInfo)
+            }, 5000);
+        })
+    }
+    else{
+        alert('Your device is not capable of our application ')
+    }
 }
 
 function batteryIcon(batteryInfo){
