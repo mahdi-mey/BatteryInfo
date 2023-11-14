@@ -48,8 +48,10 @@ function batteryPlugChage(batteryInfo){
     batteryInfo.addEventListener('chargingchange', function(event) {
         if (batteryInfo.charging) {
           batteryIcon(batteryInfo)
+          chargerIcon.classList.add('charging')
         } else {
-          batteryIcon(batteryInfo)
+            batteryIcon(batteryInfo)
+            chargerIcon.classList.remove('charging')
         }
       });
 }
