@@ -1,7 +1,5 @@
 # BatteryInfo
 
----
-
 ## Technologies used 
 - Html
 - Css
@@ -13,4 +11,6 @@
    git clone https://github.com/mahdi-mey/BatteryInfo.git
  ```
 
+---
+## You can try battery info project online
 [View Demo](https://mahdi-mey.github.io/BatteryInfo/)
